@@ -6,19 +6,21 @@
     --txt-sc-color: hsl(219, 13%, 22%, 83%);  
     --btn-bg: #024CAA;
     --btn-txt: #FFFFFF;
-
+    --font-title: 'Lilita one';
+    --font-txt: 'Poppins';
+    --font-dsc: 'Montserrat';
 }
 
 /* Main Styles */
 header {
-    background-image: url('../img/bg.png');
+    background-image: url(../img/bg.png);
     height: 100vh;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 }
 /* navbar */
 .nav-center {
-    padding: 1% 2%;
+    padding: 2% 2%;
     display: flex;
     align-items: center;
     gap: 10rem;
@@ -33,9 +35,7 @@ header {
 #toggle {
     display: none;
 }
-.link-container {
-    height: auto !important;
-}
+
 .links {
     display: flex;
     gap: 10rem;
@@ -80,4 +80,62 @@ li a:hover::after {
 }
 .fixed-txt {
     color: #31363F;
+}
+
+/* Media Breakpoint */
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 70%;
+        height: 1000rem;
+    }
+    header {
+
+        background-position: -2005rem;
+    }
+    /* navbar */
+    nav {
+        background-color: white;
+    }
+    .nav-center {
+        display: block;
+
+    }
+    .nav-header {
+        padding: 2% 2%;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--txt-pr-color);
+    }
+    #toggle { 
+        display: inline-block;
+        background: transparent;
+        border-color: transparent;
+        color: var(--txt-pr-color);
+        font-size: 2rem;
+    }
+    .link-container {
+        height: 0;
+        overflow: hidden;
+        transition: all .3 linear;
+        -webkit-transition: all .3 linear;
+        -moz-transition: all .3 linear;
+        -ms-transition: all .3 linear;
+        -o-transition: all .3 linear;
+    }
+    .links {
+        display: block;
+    }
+    .links li a{
+        display: block;
+        color: var(--txt-pr-color);
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    
+}
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    html {
+        font-size: 5%;
+    }
 }

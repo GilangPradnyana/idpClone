@@ -39,7 +39,7 @@ header {
 .links {
     display: flex;
     gap: 10rem;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 li a {
     text-decoration: none;
@@ -89,8 +89,7 @@ li a:hover::after {
         height: 1000rem;
     }
     header {
-
-        background-position: -2025rem;
+        background-position: -2000rem;
     }
     /* navbar */
     nav {

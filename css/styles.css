@@ -90,7 +90,7 @@ li a:hover::after {
     }
     header {
 
-        background-position: -2005rem;
+        background-position: -2025rem;
     }
     /* navbar */
     nav {
@@ -98,7 +98,6 @@ li a:hover::after {
     }
     .nav-center {
         display: block;
-
     }
     .nav-header {
         padding: 2% 2%;
@@ -127,11 +126,24 @@ li a:hover::after {
         display: block;
     }
     .links li a{
+        padding-bottom: 10px;
+        height: 35px;
         display: block;
         color: var(--txt-pr-color);
-        margin-top: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
     }
+    .links li a::after {
+        transform-origin: 0 0;
+    }
+    .links li a:hover::after {
+        transform: scale(.3);
+        -webkit-transform: scale(.3);
+        -moz-transform: scale(.3);
+        -ms-transform: scale(.3);
+        -o-transform: scale(.3);
+    }  
     
     
 }
@@ -176,10 +188,24 @@ li a:hover::after {
         display: block;
     }
     .links li a{
+        padding-bottom: 10px;
+        height: 35px;
         display: block;
         color: var(--txt-pr-color);
-        margin-top: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
     }
+    .links li a::after {
+        transform-origin: 0 0;
+    }
+    .links li a:hover::after {
+        transform: scale(.3);
+        -webkit-transform: scale(.3);
+        -moz-transform: scale(.3);
+        -ms-transform: scale(.3);
+        -o-transform: scale(.3);
+    }  
+    
     
 }

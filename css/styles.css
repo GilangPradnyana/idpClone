@@ -107,6 +107,7 @@ li a:hover::after {
         color: var(--txt-pr-color);
     }
     #toggle { 
+        z-index: 5;
         display: inline-block;
         background: transparent;
         border-color: transparent;
@@ -134,8 +135,51 @@ li a:hover::after {
     
     
 }
-@media screen and (min-width: 700px) and (max-width: 1024px) {
+@media screen and (min-width: 700px) and (max-width: 1180px) {
     html {
-        font-size: 5%;
+        font-size: 90%;
     }
+    header {
+        background-position: 2030rem;
+    }
+    /* navbar */
+    nav {
+        background-color: white;
+    }
+    .nav-center {
+        display: block;
+
+    }
+    .nav-header {
+        padding: 2% 2%;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--txt-pr-color);
+    }
+    #toggle { 
+        display: inline-block;
+        background: transparent;
+        border-color: transparent;
+        color: var(--txt-pr-color);
+        font-size: 2rem;
+    }
+    .link-container {
+        height: 0;
+        overflow: hidden;
+        transition: all .3 linear;
+        -webkit-transition: all .3 linear;
+        -moz-transition: all .3 linear;
+        -ms-transition: all .3 linear;
+        -o-transition: all .3 linear;
+    }
+    .links {
+        display: block;
+    }
+    .links li a{
+        display: block;
+        color: var(--txt-pr-color);
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    
 }

@@ -114,6 +114,7 @@ section.header-content {
     opacity: .7;
 }
 .header-content button a {
+    letter-spacing: 1px;
     text-decoration: none;
     color: var(--btn-txt);
     font-size: 1.2rem;

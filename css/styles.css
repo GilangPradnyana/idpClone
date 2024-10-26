@@ -76,12 +76,8 @@ li a:hover::after {
     top: 0;
     left: 0;
     right: 0;
-    background-color: hsl(219, 13%, 22%, 80%);
+    background-color: hsl(219, 13%, 22%, 90%);
 }
-.fixed-txt {
-    color: #31363F;
-}
-
 /* Media Breakpoint */
 @media screen and (max-width: 700px) {
     html {
@@ -145,6 +141,13 @@ li a:hover::after {
         -ms-transform: scale(.3);
         -o-transform: scale(.3);
     }  
+    .fixed-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--btn-txt);
+    }
     
     
 }

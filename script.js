@@ -8,5 +8,9 @@ btn.addEventListener('click', ()=> {
     console.log(linkHeight)
     const containerHeight = linkContainer.getBoundingClientRect().height;
     console.log(containerHeight)
-    linkContainer.style.height = `${linkHeight}px`
+    if(containerHeight === 0) {
+        linkContainer.style.height = `${linkHeight}px`
+    } else {
+        linkContainer.style.height = `0px`
+    }
 })

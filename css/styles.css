@@ -89,7 +89,9 @@ li a:hover::after {
         height: 1000rem;
     }
     header {
-        background-position: -2000rem;
+        background-image: url(../img/bg-mobile.png);
+        background-size: cover;
+        background-position: center;
     }
     /* navbar */
     nav {

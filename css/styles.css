@@ -332,6 +332,38 @@ button.btn-form a {
         width: 80%;
     }
     /* submit form */
+    main {
+        height: 40rem;
+    }
+    main .input {
+        margin-left: -3rem;
+        width: 98%;
+        height: 20.8rem;
+    }
+    .input .submit-section {
+        gap: 3.5rem;       
+        flex-wrap: wrap;
+    }
+    #dropdown-1 {
+        width: 46%;
+    }
+    #dropdown-2 {
+        width: 10%;
+    }
+    #dropdown-3 {
+        margin:auto ;
+        margin-top: -1rem;
+    }
+    button.btn-form {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        left: 0;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+    }
+
+
 }
 @media screen and (min-width: 700px) and (max-width: 1180px) {
     html {

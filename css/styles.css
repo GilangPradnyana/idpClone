@@ -336,9 +336,6 @@ button.btn-form a {
         width: 80%;
     }
     /* submit form */
-    main {
-        height: 40rem;
-    }
     main .input {
         margin-left: -3rem;
         width: 98%;
@@ -350,7 +347,6 @@ button.btn-form a {
     }
     #dropdown-1 {
         width: 50% !important;
-        border: 1px springgreen solid;
     }
     #dropdown-2 {
         width: 40%;
@@ -383,7 +379,7 @@ button.btn-form a {
     }
     .nav-center {
         display: block;
-
+        padding: 0;
     }
     .nav-header {
         padding: 2% 2%;
@@ -399,7 +395,10 @@ button.btn-form a {
         font-size: 2rem;
     }
     .link-container {
+        background-color: #FFFFFF;
+        position: absolute;
         height: 0;
+        width: 100%;
         overflow: hidden;
         transition: all .3 linear;
         -webkit-transition: all .3 linear;
@@ -409,6 +408,7 @@ button.btn-form a {
     }
     .links {
         display: block;
+        padding-left: 2%;
     }
     .links li a{
         padding-bottom: 10px;
@@ -447,5 +447,13 @@ button.btn-form a {
     .header-content h3 {
         width: 60%;
     }
+    /* form submit */
+    .input .submit-section {
+        gap: 1rem;
+    }
+    .input button.btn-form {
+        margin-left: 33rem;
+    }
+   
 
 }

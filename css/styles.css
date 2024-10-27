@@ -227,7 +227,7 @@ span.selected {
 /* form btn */
 button.btn-form {
     margin-top:1.5rem ;
-    margin-left: 53rem;
+    margin-left: 51rem;
     background: transparent;
     border-color: transparent;
     padding: .7rem 4rem;
@@ -425,6 +425,12 @@ button.btn-form a {
         left: 0;
         margin: 0 auto;
         margin-top: 2.5rem;
+    }
+
+    /* why choosing idp */
+    .choosing .header {
+        margin-top: 10rem;
+        margin-left: 1.5rem;
     }
 
 

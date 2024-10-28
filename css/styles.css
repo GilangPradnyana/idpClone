@@ -181,7 +181,7 @@ main .input {
 span.selected {
     font-family: var(--font-txt);
     font-size: 1rem;
-    color: #31363F;
+    color: var(--txt-sc-color);
 }
 #dropdown-1 {
     width: 20rem;
@@ -314,6 +314,7 @@ button.btn-form a {
 .destination {
     padding: var(--pad);
     background-color: #D9D9D9;
+    height: 1000rem;
 }
 .destination .destination-header {
     padding-top: 3rem;
@@ -331,6 +332,102 @@ button.btn-form a {
     font-weight: 300;
 }
 /* content destination */
+.destination .destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    justify-content: center;
+}
+.destination-content {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 3;
+}
+.destination-content .destination-img img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.destination-content .destination-img h2 {
+    top: 40%;
+    left: 25%;
+    position: absolute;
+    z-index: 1;
+    font-family: var(--font-txt);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--btn-bg);
+}
+/* destination description */
+.destination-desc {
+    display: none;
+    top: 0;
+    height: 18.5rem;
+    width: 18.5rem;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    z-index: 2;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.destination-desc h1 {
+    font-family: var(--font-txt);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .2rem;
+    color: var(--btn-bg);
+}
+.destination-desc p {
+    font-family: var(--font-dsc);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--txt-sc-color);
+    line-height: 1.2rem;
+    margin-bottom: 3rem;
+    width: 70%;
+}
+.destination-desc a {
+    padding: .7rem 4rem;
+    text-align: center;
+    border: 1px solid blue;
+    width: 10%;
+    text-decoration: none;
+    color: #D9D9D9;
+    background-color: #024CAA;
+    border-radius: 50px;
+    font-family: var(--font-txt);
+    letter-spacing: 1px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.destination-content:hover .destination-desc {
+    display: block;
+    border: 2px solid var(--btn-bg);
+}
+/* title selection */
+#australia {
+    left: 20%;
+}
+#selandia-baru {
+    left: 12%;
+}
+#inggris {
+    left: 29%;
+}
+
+
 
 
 

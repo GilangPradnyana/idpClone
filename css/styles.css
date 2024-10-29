@@ -653,5 +653,10 @@ button.btn-form a {
         margin-left: 33rem;
     }
    
+    /* Destination section */
+    .destination-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0 !important;
+    }
 
 }

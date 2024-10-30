@@ -844,10 +844,23 @@ article .about-container img {
     article .about-container {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
     .about-container img {
         width: 100%;
         height: 50% !important;
+    }
+
+    /* FAQ section */
+    .faq .faq-container {
+        gap: 1rem !important;
+        margin-left: -5rem;
+    }
+    .faq .faq-container .question-container {
+        margin-left: -2rem;
+    }
+    .faq-container .question-container .question-items {
+        width: 90% !important;
     }
 
 }

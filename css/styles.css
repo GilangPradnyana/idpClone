@@ -528,6 +528,7 @@ article .about-container img {
     background-color: #D9D9D9;
 }
 .faq .header{
+    padding-top: 2rem;
     margin-bottom: 2rem;
     color: var(--txt-pr-color);
     font-family: var(--font-title);

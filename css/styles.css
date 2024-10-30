@@ -719,6 +719,26 @@ article .about-container img {
         width: 120% !important;
     }
 
+    /* faq section */
+    .faq .header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .faq .faq-container {
+        position: relative;
+    }
+    .faq .faq-container img {
+        width: 90%;
+        margin-left: -10rem;
+    }
+    .faq .faq-container .question-container {
+        position: absolute;
+        right: 0;
+        margin-right: -2rem;
+    }
+    .faq .faq-container .question-container .question-items {
+        width: 80%;
+    }
 
 }
 @media screen and (min-width: 700px) and (max-width: 1180px) {

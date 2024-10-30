@@ -653,6 +653,17 @@ article .about-container img {
         margin: auto;
     }
    
+    /* About section */
+    .about-container {
+        width: 90% !important;
+        flex-wrap: wrap !important;
+        justify-content: center;
+        gap: 1rem !important;
+    }
+    article .about-container .content-section {
+        width: 120% !important;
+    }
+
 
 }
 @media screen and (min-width: 700px) and (max-width: 1180px) {

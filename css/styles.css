@@ -258,7 +258,7 @@ button.btn-form a {
     font-family: var(--font-title);
     font-weight: 500;
     color: var(--txt-pr-color);
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 12.4rem;
     margin-left: 5rem;
 }
@@ -322,7 +322,7 @@ button.btn-form a {
 }
 .destination-header h1 {
     font-family: var(--font-title);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 .destination-header p {
@@ -439,7 +439,7 @@ article .header {
 article .header h1 {
     font-family: var(--font-title);
     color: var(--txt-pr-color);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 article .header p {
@@ -519,6 +519,61 @@ article .about-container img {
 }
 .content-section .content.about-active {
     display: block !important;
+}
+
+/* FAQ section */
+.faq {
+    padding: var(--pad);
+    margin: 3rem 0;
+    background-color: #D9D9D9;
+}
+.faq .header{
+    margin-bottom: 2rem;
+    color: var(--txt-pr-color);
+    font-family: var(--font-title);
+    font-size: 3rem;
+}
+.faq .faq-container {
+    display: flex;
+    gap: 10rem;
+}
+.faq .faq-container .question-container .question-items {
+    border: 1px solid hsl(219, 13%, 22%, 50%);
+    width: 30rem;
+    padding: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-txt);
+    font-size: 1.2rem;
+    color: var(--txt-pr-color);
+    border-radius: 10px;
+    transition: .6s all ease;
+    background-color: #FFFFFF;
+    margin-bottom: 1rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: .6s all ease;
+    -moz-transition: .6s all ease;
+    -ms-transition: .6s all ease;
+    -o-transition: .6s all ease;
+}
+.faq .faq-container .question-container .question-items:hover {
+    border-color: #024CAA;
+}
+.question-container .question-items:hover  i {
+    transform: translateX(5px);
+    transition: .6s all ease-out;
+    color: #024CAA !important;
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    -webkit-transition: .6s all ease-out;
+    -moz-transition: .6s all ease-out;
+    -ms-transition: .6s all ease-out;
+    -o-transition: .6s all ease-out;
 }
 
 

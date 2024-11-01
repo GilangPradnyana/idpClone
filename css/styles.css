@@ -682,7 +682,10 @@ article .about-container img {
 /* list section */
 .list-container {
     margin-top: 1rem;
-    /* visibility: hidden; */
+    visibility: hidden;
+}
+.list-container.show-list {
+    visibility: visible;
 }
 
 .list-item {

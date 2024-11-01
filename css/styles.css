@@ -525,7 +525,7 @@ article .about-container img {
 .faq {
     padding: var(--pad);
     margin: 3rem 0;
-    background-color: #D9D9D9;
+    background: #D9D9D9;
 }
 .faq .header{
     padding-top: 2rem;
@@ -883,6 +883,9 @@ button.clear-btn {
     }
 
     /* faq section */
+    .faq {
+        position: relative;
+    }
     .faq .header {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -897,12 +900,19 @@ button.clear-btn {
     .faq .faq-container .question-container {
         position: absolute;
         right: 0;
-        margin-right: -2rem;
     }
     .faq .faq-container .question-container .question-items {
-        width: 80%;
+        width: 90%;
+        /* margin-right: -2rem; */
     }
 
+    /* Form section */
+    .list {
+        width: 80%;
+    }
+    .list .list-section{
+        width: 50%;
+    }
 }
 @media screen and (min-width: 700px) and (max-width: 1180px) {
     html {

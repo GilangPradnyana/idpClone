@@ -35,7 +35,13 @@ header {
 #toggle {
     display: none;
 }
-
+.link-container {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
 .links {
     display: flex;
     gap: 10rem;

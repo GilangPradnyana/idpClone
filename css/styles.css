@@ -580,7 +580,7 @@ article .about-container img {
 /* Country List */
 .list{
     padding: var(--pad);
-    height: 100rem;
+    margin-bottom: 3rem;
 }
 .list .header {
     margin-bottom: 3rem;
@@ -591,6 +591,7 @@ article .about-container img {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 5px;
+    line-height: 1.2rem;
 }
 .list .header p {
     font-family: var(--font-txt);
@@ -903,15 +904,11 @@ button.clear-btn {
     }
     .faq .faq-container .question-container .question-items {
         width: 90%;
-        /* margin-right: -2rem; */
     }
 
     /* Form section */
-    .list {
-        width: 80%;
-    }
     .list .list-section{
-        width: 50%;
+        width: 70%;
     }
 }
 @media screen and (min-width: 700px) and (max-width: 1180px) {

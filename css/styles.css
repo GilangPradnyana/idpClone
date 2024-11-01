@@ -909,6 +909,13 @@ button.clear-btn {
     .list .list-section{
         width: 70%;
     }
+    .list-container .country-list {
+        width: 100% !important;
+    }
+    .country-list .list-item {
+        width: 100% !important;
+    }
+
 }
 @media screen and (min-width: 700px) and (max-width: 1180px) {
     html {

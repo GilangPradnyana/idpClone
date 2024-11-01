@@ -591,7 +591,6 @@ article .about-container img {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 5px;
-    line-height: 1.2rem;
 }
 .list .header p {
     font-family: var(--font-txt);

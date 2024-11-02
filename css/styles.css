@@ -35,6 +35,13 @@ header {
 #toggle {
     display: none;
 }
+#nav {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
 .link-container {
     transition: all .2s linear;
     -webkit-transition: all .2s linear;
@@ -45,7 +52,8 @@ header {
 .links {
     display: flex;
     gap: 10rem;
-    margin-top: 20px;
+    align-items: center;
+    /* margin-top: 20px; */
 }
 li a {
     text-decoration: none;
@@ -135,6 +143,7 @@ main{
 }
 main .input {
     position: absolute;
+    z-index:1;
     left: 3.3rem;
     top: -4.5rem;
     width: 90%;
@@ -754,7 +763,6 @@ button.clear-btn {
 @media screen and (max-width: 700px) {
     html {
         font-size: 70%;
-        height: 1000rem;
     }
     header {
         background-image: url(../img/bg-mobile.png);
@@ -823,6 +831,7 @@ button.clear-btn {
         left: 0;
         right: 0;
         background-color: var(--btn-txt);
+        z-index: 20 !important;
     }
     /* header content */
     section.header-content {

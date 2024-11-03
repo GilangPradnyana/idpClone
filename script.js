@@ -37,10 +37,10 @@ scrollLinks.forEach((link)=> {
         if(fixedNav) {
             position = position - navHeight;
         };
-        if(navHeight > 20) {
-            position = position + containerHeight ;
+        if(navHeight > 60) {
+            position = position + containerHeight + containerHeight;
         }
-        
+        console.log(navHeight)
         window.scrollTo({
             left: 0,
             top : position
@@ -63,11 +63,11 @@ dropdownContainer.forEach((btn) => {
             const newMenu = el.querySelector('.menu');
             const newCaret = el.querySelector('.caret');
             if(newMenu !== menu) {
-                newCaret.classList.remove('rotate')
-                newMenu.classList.remove('show-menu')
+                newCaret.classList.remove('rotate');
+                newMenu.classList.remove('show-menu');
             }
         })
-        caret.classList.toggle('rotate')
-        menu.classList.toggle('show-menu')
+        caret.classList.toggle('rotate');
+        menu.classList.toggle('show-menu');
     });
 });

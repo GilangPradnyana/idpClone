@@ -46,5 +46,28 @@ scrollLinks.forEach((link)=> {
             top : position
         })
         linkContainer.style.height = '0px'
-    })
-})
+    });
+});
+
+// ==== DROPDOWN SECTION ====
+const dropdownContainer = document.querySelectorAll('.dropdown');
+const submitSection = document.querySelector('.submit-section');
+const formText = document.querySelectorAll('.selected');
+dropdownContainer.forEach((btn) => {
+    const button = btn.querySelector('.select');
+    const menu = btn.querySelector('.menu')
+    const caret = btn.querySelector('.caret')
+    console.log(menu)
+    button.addEventListener('click', ()=> {
+        dropdownContainer.forEach((el)=> {
+            const newMenu = el.querySelector('.menu');
+            const newCaret = el.querySelector('.caret');
+            if(newMenu !== menu) {
+                newCaret.classList.remove('rotate')
+                newMenu.classList.remove('show-menu')
+            }
+        })
+        caret.classList.toggle('rotate')
+        menu.classList.toggle('show-menu')
+    });
+});

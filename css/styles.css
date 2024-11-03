@@ -93,6 +93,7 @@ li a:hover::after {
     left: 0;
     right: 0;
     background-color: hsl(219, 13%, 22%, 90%);
+    z-index: 20;
 }
 /* Header content */
 section.header-content {

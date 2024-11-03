@@ -99,6 +99,7 @@ function addItems(e) {
         createItemList(ID, valueInput);
         displayAlert('succes', 'succes');
         container.classList.add('show-list');
+        addToLocalStorage(ID, valueInput);
         setToDefault();
     } else if(valueInput && editFlag ) {
         editElement.innerHTML = valueInput;
@@ -120,6 +121,7 @@ function deleteItem(e) {
         container.classList.remove('show-list')
     };
     setToDefault();
+    removeLocalStorage(id);
 }; 
 function editItem(e) {
     const item = e.currentTarget.parentElement.parentElement
@@ -158,6 +160,8 @@ function clearItems() {
     container.classList.remove('show-list');
     displayAlert('item was deleted', 'succes')
     setToDefault();
+    // clear the localStorage
+    localStorage.removeItem('list');
 };
 
 // Create Items
@@ -190,4 +194,26 @@ function createItemList(ID, value) {
           
     // append child
     list.appendChild(element);
+};
+
+// LOCAL STORAGE/API
+function addToLocalStorage(id, value) {
+    const element = {id, value};
+    let item = getLocalStorage();
+    item.push(element);
+    localStorage.setItem('list', JSON.stringify(item));
+};
+
+function removeLocalStorage(id) {
+    let items = getLocalStorage();
+    items = items.filter((item)=> {
+        if(item.id !== id) {
+            return item
+        };
+    });
+    localStorage.setItem('list', JSON.stringify(items));
+};
+
+function getLocalStorage() {
+    return localStorage.getItem('list')? JSON.parse(localStorage.getItem('list')):[];
 };

@@ -104,6 +104,7 @@ function addItems(e) {
     } else if(valueInput && editFlag ) {
         editElement.innerHTML = valueInput;
         displayAlert('Content edited', 'succes')
+        editLocalStorage(editID, valueInput)
         setToDefault();
     } else {
         displayAlert('Please input some value', 'danger')
@@ -164,6 +165,40 @@ function clearItems() {
     localStorage.removeItem('list');
 };
 
+
+// LOCAL STORAGE/API
+function addToLocalStorage(id, value) {
+    const element = {id, value};
+    let item = getLocalStorage();
+    item.push(element);
+    localStorage.setItem('list', JSON.stringify(item));
+};
+
+function removeLocalStorage(id) {
+    let items = getLocalStorage();
+    items = items.filter((item)=> {
+        if(item.id !== id) {
+            return item
+        };
+    });
+    localStorage.setItem('list', JSON.stringify(items));
+};
+
+function editLocalStorage(id, value) {
+    let item = getLocalStorage();
+    item.map((items)=> {
+        if(items.id === id) {
+            items.value = value
+        };
+        return items
+    });
+    console.log(item)
+    localStorage.setItem('list', JSON.stringify(item))
+}
+
+function getLocalStorage() {
+    return localStorage.getItem('list')? JSON.parse(localStorage.getItem('list')):[];
+};
 // Create Items
 function createItemList(ID, value) {
     // create items
@@ -194,26 +229,4 @@ function createItemList(ID, value) {
           
     // append child
     list.appendChild(element);
-};
-
-// LOCAL STORAGE/API
-function addToLocalStorage(id, value) {
-    const element = {id, value};
-    let item = getLocalStorage();
-    item.push(element);
-    localStorage.setItem('list', JSON.stringify(item));
-};
-
-function removeLocalStorage(id) {
-    let items = getLocalStorage();
-    items = items.filter((item)=> {
-        if(item.id !== id) {
-            return item
-        };
-    });
-    localStorage.setItem('list', JSON.stringify(items));
-};
-
-function getLocalStorage() {
-    return localStorage.getItem('list')? JSON.parse(localStorage.getItem('list')):[];
 };

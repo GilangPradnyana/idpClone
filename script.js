@@ -87,7 +87,7 @@ let editID = '';
 // Event handling
 form.addEventListener('submit', addItems);
 clearBtn.addEventListener('click', clearItems);
-// window.addEventListener('DOMContentLoaded', setupItems)
+window.addEventListener('DOMContentLoaded', setupItems)
 
 // FUNCTION
 function addItems(e) {
@@ -199,6 +199,20 @@ function editLocalStorage(id, value) {
 function getLocalStorage() {
     return localStorage.getItem('list')? JSON.parse(localStorage.getItem('list')):[];
 };
+
+// Setup items 
+function setupItems() {
+    let item = getLocalStorage();
+    if(item.length > 0) {
+        item.forEach((items)=> {
+            createItemList(items.id, items.value);
+        });
+        container.classList.add('show-list');
+    };
+};
+
+
+
 // Create Items
 function createItemList(ID, value) {
     // create items

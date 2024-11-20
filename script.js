@@ -70,6 +70,31 @@ dropdownContainer.forEach((btn) => {
     });
 });
 
+
+// ==== ABOUT SECTION PAGE ====
+const aboutContainer = document.querySelector('.about-container');
+const abtButton = document.querySelectorAll('.tab-btn');
+const abtArticle = document.querySelectorAll('.content-items .content');
+aboutContainer.addEventListener('click', (e) => {
+    const id = e.target.dataset.id
+    // statement
+    if(id) { // if id is not undefined, then if is running
+        // remove active from other btn
+        abtButton.forEach((btn) => {
+            btn.classList.remove('btn-active');
+            e.target.classList.add('btn-active');
+        });
+        // hide other article
+        abtArticle.forEach((article) => {
+            article.classList.remove('about-active')
+        });
+        const element = document.getElementById(id);
+        element.classList.add('about-active')
+    };
+});  
+
+
+
 // ==== CREATE LIST FUNCTION ====
 const alert = document.querySelector('.alert');
 const form =  document.querySelector('.list-form');
